@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --DARK-CYAN: hsl(185, 75%, 39%);
+    --VERY-DARK-DESATURATED-BLUE: hsl(229, 23%, 23%);
+    --DARK-GRAYISH-BLUE: hsl(227, 10%, 46%);
+    --WHITE-COLOR: rgb(255, 255, 255);
+    --BORDER-RADIUS: 15px;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    font-size: 1.125rem;
+    background-color: var(--DARK-CYAN);
+}
+
+article {
+    width: 400px;
+    background-color: var(--WHITE-COLOR);
+    border-radius: var(--BORDER-RADIUS);
+    position: relative;
+    margin: 2rem;
+}
+
+.pic {
+    position: absolute;
+    margin-top: 145px;
+    margin-left: 155px;
+    justify-content: center;
+}
+
+.box_sec {
+    margin: 0;
+    background-color: coral;
+    height: 200px;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+    border: none;
+    border-radius: 50px;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0 3rem;
+}
+
+.title-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    margin: 3rem 0 1rem;
+}
+
+.status-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+    margin: 0 1rem;
+    font-size: 1rem;
+}
+
+.status-div {
+    text-align: center;
+}
+
+.sub-stat {
+    font-size: .8rem;
+}
+
+.age {
+    font-size: 1.8rem;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}

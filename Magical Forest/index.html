@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magical Forest</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <header class="header">
+                <div class="layers">
+                    <div class="layer-title">
+                        <div class="subtitle">Welcome to</div>
+                        <div class="title">Fairy Forest</div>
+                    </div>
+                    <div class="layer layer-base"></div>
+                    <div class="layer layer-middle"></div>
+                    <div class="layer layer-front"></div>
+                </div>
+            </header>
+            <article class="article">
+                <div class="article-content">
+                    <h2 class="article-title">To be continued</h2>
+                    <p class="article-text">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis
+                        error provident dignissimos facere. Repellendus tempore autem qui!
+                        Quia magnam tempora esse id necessitatibus corrupti mollitia
+                        expedita sapiente cum rerum, ut dicta laboriosam!
+                    </p>
+                </div>
+                <div class="copy">© WebDesign Master</div>
+            </article>
+        </div>
+    </div>
+    <script>
+        gsap.registerPlugin(ScrollTrigger, ScrollSmoother)
+        ScrollSmoother.create({
+            wrapper: '.wrapper',
+            content: '.content'
+        });
+
+        const handleScroll = () => {
+            const scrollTop = document.documentElement.scrollTop;
+            document.documentElement.style.setProperty('--scrollTop', `${scrollTop}px`);
+        }
+
+        document.addEventListener('scroll', () => {
+            requestAnimationFrame(handleScroll);
+        });
+
+    </script>
+</body>
+
+</html>

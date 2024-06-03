@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background: hsl(233, 45%, 65%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex {
+    width: 70vw;
+    background: hsl(244, 38%, 16%);
+    border-radius: 7px;
+    display: flex;
+}
+
+.abox {
+    padding: 4rem;
+    width: 50%;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+p {
+    color: white;
+    margin: 1.5rem 0 3rem 0;
+}
+
+.flex .bbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+.number {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.name {
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+}
+
+.flex .box {
+    border-radius: 0 7px 7px 0;
+    width: 50%;
+    background-color: red;
+}
+
+@media (max-width: 640px) {
+
+    .flex {
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        width: 90vw;
+        height: 90vh;
+    }
+
+    .abox {
+        width: auto;
+        height: 70%;
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .flex .bbox {
+        flex-direction: column;
+    }
+
+    .abc,
+    .pqr,
+    .xyz {
+        margin-bottom: 17px;
+    }
+
+    .flex .box {
+        border-radius: 7px 7px 0 0;
+        width: 100%;
+        height: 30%;
+        background-color: red;
+    }
+}
